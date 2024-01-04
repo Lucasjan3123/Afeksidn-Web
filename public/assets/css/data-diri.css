@@ -1,0 +1,29 @@
+.data-diri {
+    max-width: 1300px;
+    width: 85%;
+    margin: auto !important;
+  }
+
+  input,
+  select {
+    box-shadow: none !important;
+  }
+
+  .btn-fill {
+    background-color: #233dff !important;
+    color: white !important;
+    margin-bottom: 10px;
+    float: right;
+  }
+
+  .btn-fill:hover {
+    background-color: transparent !important;
+    border: 1px solid #233dff !important;
+    color: #233dff !important;
+  }
+
+  @media (max-width: 500px) {
+    .data-diri {
+      width: 100%;
+    }
+  }

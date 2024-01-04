@@ -1,0 +1,235 @@
+body {
+    overflow-x: hidden;
+}
+
+/* BREADCRUMB */
+@media (max-width: 767.98px) {
+    .breadcrumb a {
+        display: none;
+    }
+    .breadcrumb li {
+        display: none;
+    }
+}
+
+.breadcrumb .breadcrumb-item a,
+.breadcrumb .breadcrumb-item.active {
+    color: white !important;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: " > ";
+    color: white !important;
+}
+/* END BREADCRUMB */
+
+/* HEADER */
+div .hero {
+    background: url(../img/volunteer/background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 3rem;
+}
+
+div .btn-join {
+    position: relative;
+    z-index: 2;
+    background-color: #ffd34e;
+    box-shadow: 0px 0px 40px 0px #ffd34e;
+}
+
+div .btn-join:hover {
+    background-color: #ffd34e;
+    color: #000;
+    animation: scale-down-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.right {
+    position: absolute;
+    bottom: -10%;
+    left: -27%;
+}
+
+@keyframes scale-down-center {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.93);
+    }
+}
+
+/* END HEADER */
+
+/* BENEFIT SECTION */
+div .card-benefits {
+    height: 100%;
+}
+/* END BENEFIT SECTION */
+
+/* KARIR */
+.karir {
+    margin-top: 130px;
+}
+
+.img-container img {
+    max-width: 250px;
+    height: 332px !important;
+    height: fit-content;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+
+.img-container .img:nth-child(odd) {
+    margin-top: 40px;
+}
+
+.background-vector {
+    position: absolute;
+    bottom: -4rem;
+    left: -1rem;
+    z-index: -1;
+    width: 26rem;
+}
+.background-vectortwo {
+    position: absolute;
+    top: -100rem;
+    right: -5rem;
+    z-index: -1;
+    width: 26rem;
+}
+
+@media (max-width: 920px) {
+    .img-container .img:nth-child(odd) {
+        margin-top: 0px;
+    }
+}
+/* END KARIR */
+
+/* CAROUSEL */
+:root {
+    --swiper-navigation-size: 25px !important;
+}
+
+.contents {
+    background: url(../img/volunteer/intern\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px;
+}
+
+
+.slide-container {
+    height: fit-content;
+}
+
+.slide-container h2 {
+    color: blue;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.slide-container p {
+    color: rgb(92, 92, 92);
+}
+
+.swiper-slide {
+    margin-top: 50px;
+    background: white;
+    overflow: visible;
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 100px;
+    border: 1px solid rgb(214, 213, 213);
+}
+
+.swiper-slide span {
+    font-size: 14px;
+}
+
+.slide-container .swiper-pagination-bullet {
+    height: 5px;
+    background-color: rgb(251, 223, 13);
+    opacity: 1;
+}
+
+.slide-container .swiper-pagination-bullet-active {
+    width: 25px;
+    height: 5px;
+    border-radius: 5px;
+}
+
+.s-btn {
+    padding: 17px !important;
+    border-radius: 5px !important;
+}
+
+.swiper-button-next {
+    position: absolute !important;
+    top: 35px !important;
+    background-color: #fff;
+    color: blue !important;
+    border: 3px solid #fff;
+}
+
+.swiper-button-prev {
+    position: absolute !important;
+    top: 35px !important;
+    left: 91% !important;
+    border: 3px solid #fff;
+    color: #fff !important;
+}
+
+@media (max-width: 1040px) {
+    .contents {
+        padding: 50px 30px;
+        text-align: center;
+    }
+
+    .swiper-button-next {
+        display: none !important;
+    }
+
+    .swiper-button-prev {
+        display: none !important;
+    }
+}
+/* END CAROUSEL */
+
+/* BERGABUNGLAH BERSAMA KAMI */
+.btn-selengkapnya:hover {
+    animation: scale-down-center 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.9) both;
+}
+
+.bergabung .background {
+    position: absolute;
+    bottom: -31rem;
+}
+
+@media (max-width: 1199.98px) {
+    .col-join {
+        flex: 100%;
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .col-join {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+/* END BERGAUNG BERSAMA KAMI */
+
+
+@media (max-width: 930px) {
+    .background,
+    .background-vector,
+    .background-vectortwo {
+        display: none;
+    }
+} /* remove background in small devices

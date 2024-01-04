@@ -1,0 +1,68 @@
+.form-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 500px
+}
+
+input.form-masalah{
+    border-right: none;
+    display: block;
+    width: 100%;
+    margin-left: 4rem;
+    padding: 8px 16px;
+}
+
+.input-group-text{
+    background-color: white;
+    border-left: none;
+}
+
+
+.card-container{
+    border: 1px solid gray;
+    padding: 1rem;
+    border-radius: 30px;
+}
+
+.psikolog-image{
+    width: 300px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+.bi-star-fill{
+    font-size: 1.3rem;
+}
+
+.profil{
+    padding: 2rem;
+    border: 1px solid gray;
+    margin-bottom: 2rem;
+    border-radius: 30px;
+}
+.keahlian{
+    padding: 2rem;
+    border: 1px solid gray;
+    border-radius: 30px;
+}
+.keahlian-items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items:center ;
+}
+.keahlian-items p{
+    border: 1px solid black;
+    padding: 4px 24px;
+    border-radius: 20px;
+}
+
+.button-konsultasi{
+    border-radius: 20px;
+    padding: 5px 13px;
+    display: block;
+    margin-top: 3rem;
+    background-color: #FBDD41;
+}

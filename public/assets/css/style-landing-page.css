@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.nav-logo {
+    width: 40%;
+    margin: -15px;
+}
+
+.custom-button {
+    font-weight: 600;
+    width: 200px;
+}
+
+/* Hero Section */
+.bg-hero {
+    background: linear-gradient(
+        180deg,
+        rgba(24, 43, 207, 0.79) 0%,
+        rgba(83, 88, 203, 0.76) 50%,
+        rgba(13, 23, 247, 0.79) 100%
+    );
+    overflow: hidden;
+    position: relative;
+}
+
+.banner {
+    background: url(../img/landing-page/sect-1-bg-1.png) no-repeat;
+    margin: 0 0 -10px 10px;
+}
+
+.banner-headline {
+    position: absolute;
+    top: 38%;
+    left: 30px;
+    letter-spacing: 0.1rem;
+}
+
+.banner-headline button {
+    top: 330px;
+    position: absolute;
+}
+
+/* Kegiatan Section */
+#kegiatan {
+    background: url(../img/landing-page/sect-2-bg.png) no-repeat;
+    background-size: cover;
+}
+
+.sect-2-box {
+    background-color: #5260db;
+    margin: 0 0 15% 2%;
+    padding: 10% 10% 5% 10%;
+}
+
+.sect-2-box img {
+    width: 90%;
+    height: 300px;
+}
+
+/* Profil Psikolog */
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+main h1 {
+    margin-bottom: 50px;
+}
+
+.wrapper {
+    position: relative;
+
+    /* // Gradient side fade */
+}
+.wrapper:before,
+.wrapper:after {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    content: "";
+    display: block;
+    width: 100%;
+}
+.wrapper:before {
+    left: 0;
+    background: linear-gradient(90deg, #222, transparent);
+}
+
+.wrapper:after {
+    right: 0;
+    background: linear-gradient(-90deg, #222, transparent);
+}
+
+.items {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 0;
+    cursor: pointer;
+}
+.items:active {
+    cursor: grab;
+}
+
+.item {
+    display: inline-block;
+    margin-right: 25px;
+    margin-left: 5px;
+    user-select: none;
+    background: #5260db;
+    width: 100%;
+    height: 400px;
+    color: #222;
+    border-radius: 5%;
+}
+
+.item img {
+    width: 320px;
+    height: 500px;
+    margin: -30% -5%;
+}
+
+.item:last-child {
+    /* margin-right: 20px; */
+}
+
+.item2 {
+    display: inline-block;
+    position: relative;
+    user-select: none;
+    background: rgb(255, 255, 255);
+    color: black;
+    box-shadow: 3px 13px 5px 0px rgba(114, 114, 114, 0.75);
+    border-radius: 5%;
+    /* margin-left: 100px; */
+    /* padding: %; */
+    /* width: 100%; */
+    /* height: 150px; */
+    /* overflow: hidden; */
+}
+
+.item2 p {
+    padding: 5%;
+    text-align: center;
+    font-size: 18px;
+    white-space: normal;
+}
+
+.item2:last-child {
+    margin-right: 20px;
+}
+
+.item2:nth-child(2n + 1) {
+    top: 0;
+    margin-top: 20%;
+    /* background-color: silver; */
+    /* margin-bottom: 5%; */
+}
+
+.item2:nth-child(2n + 2) {
+    margin-bottom: 10%;
+    margin-left: 60px;
+    margin-right: 60px;
+    bottom: 200px;
+}
+
+.camera {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 15%;
+}
+
+@media screen and (min-width: 500px) {
+    .item {
+        width: 33%;
+    }
+    .item2 {
+        width: 33%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .item {
+        width: 25%;
+    }
+    .item2 {
+        width: 25%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .wrapper {
+        margin-left: 20px;
+    }
+
+    .item {
+        width: 20%;
+    }
+
+    .item2 {
+        width: 30%;
+    }
+}
+/* footer */
+.kotak {
+    position: relative;
+    top: 40px;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+.bg-footer {
+    background: rgb(24, 43, 207);
+    background: linear-gradient(
+        180deg,
+        rgba(24, 43, 207, 0.79) 0%,
+        rgba(42, 72, 252, 0.76) 50%,
+        rgba(42, 72, 252, 0.79) 100%
+    );
+}

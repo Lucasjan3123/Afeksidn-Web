@@ -1,0 +1,151 @@
+* {
+    font-family: "Rubik", sans-serif !important;
+    text-decoration: none !important;
+}
+
+/* hero section */
+.hero {
+    padding: 50px 90px;
+    margin-bottom: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.hero-content {
+  max-width: 1375px;
+  margin: auto !important;
+}
+
+.hero img {
+    width: 70%;
+}
+
+.campaign {
+    padding: 50px 90px 90px 90px;
+}
+
+/* CARD */
+.card-daftar {
+    position: absolute;
+    top: 9.8rem;
+    right: 3rem;
+    z-index: 1;
+}
+
+.card-daftar-campaign {
+    position: absolute;
+    top: 8.3rem;
+    right: 3rem;
+    z-index: 1;
+}
+
+
+@media (min-width: 1600px) {
+  .card-daftar {
+    position: absolute;
+    top: 9.8rem;
+    right: 8rem;
+    z-index: 1;
+}
+}
+
+@media (min-width: 1800px) {
+  .card-daftar {
+    position: absolute;
+    top: 9.8rem;
+    right: 10rem;
+    z-index: 1;
+}
+}
+
+@media (max-width: 1000px) {
+    .card-daftar,
+    .card-daftar-campaign {
+        position: relative;
+        margin: 40px;
+        top: 0rem;
+        left: 0rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .card-daftar,
+    .card-daftar-campaign {
+        position: relative;
+        margin: 10px;
+        top: 0rem;
+        left: 0rem;
+    }
+}
+
+.btn-daftar {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-daftar:hover {
+  opacity: 85%;
+}
+
+.btn-daftar:focus {
+    outline: none;
+}
+
+.custom-list li img {
+    margin-right: 10px;
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+/* CONTENT */
+.list-daftar-webinar {
+    padding: 0;
+    list-style-position: inside;
+}
+
+@media (max-width: 600px) {
+    .hero,
+    .contents,
+    .campaign {
+        padding: 50px 30px;
+    }
+}
+
+/* Modal form */
+select#informasi-webinar {
+    padding: 0.5rem;
+}
+.upload-file-wrapper {
+    cursor: pointer;
+}
+
+label.upload-file {
+    width: 100%;
+    color: #667085;
+    cursor: pointer;
+    border: 1px solid #d0d5dd;
+    border-radius: 8px;
+    padding: 0.5rem 0.5rem;
+}
+input#upload-file {
+    opacity: 0;
+    cursor: pointer;
+    margin-top: -35px;
+    margin-left: 10px;
+    z-index: 1;
+    cursor: pointer;
+}
+.bi-plus-circle-fill {
+    color: #233dff;
+}
+
+.btn-daftar-webinar {
+    background-color: #2139f9 !important;
+    color: #fff !important;
+}
+.btn-daftar-webinar:hover {
+    background-color: #2139f9;
+    opacity: 85%;
+    color: #fff;
+}

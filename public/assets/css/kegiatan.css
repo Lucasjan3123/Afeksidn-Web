@@ -1,0 +1,146 @@
+/* hero section */
+.hero {
+    padding: 50px 90px;
+    margin-bottom: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.dflex {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.campaign {
+    padding: 50px 90px 90px 90px;
+}
+
+.campaign-hero {
+    margin-bottom: -90px;
+}
+
+/* contents */
+.contents {
+    padding: 50px 90px;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(94, 94, 94, 0.1);
+}
+
+.card img {
+    height: 185px;
+    object-fit: cover;
+}
+
+.card-title,
+.side-heading {
+    font-size: 17px;
+}
+
+.card span {
+    font-size: 11px;
+    background-color: #f2f5fa;
+    border-radius: 20px;
+}
+
+.person img {
+    width: 35px;
+    height: 35px;
+}
+
+.name p,
+.date p {
+    font-size: 13px;
+    margin: 0;
+}
+
+.date img {
+    height: 16px;
+}
+
+/* side */
+.password-container {
+    position: relative;
+}
+
+.password-container input {
+    font-size: 15px;
+    box-shadow: none !important;
+    background: rgb(247, 247, 247);
+}
+
+.button button:hover {
+  background-color: #f1f1f2 !important;
+}
+
+.password-icon {
+    width: 22px;
+}
+
+.form-check,
+select,
+.form-group input {
+    font-size: 15px !important;
+    box-shadow: none !important;
+    color: rgb(103, 102, 102);
+}
+
+.form-check {
+    margin-bottom: 10px;
+}
+
+.side-btn {
+    background-color: #233dff !important;
+    color: white !important;
+    margin-bottom: 10px !important;
+}
+
+.side-btn:hover {
+    background-color: transparent !important;
+    border: 1px solid #233dff !important;
+    color: #233dff !important;
+}
+
+.btn-outline {
+    background-color: transparent !important;
+    border: 1px solid #233dff !important;
+    color: #233dff !important;
+}
+
+.btn-outline:hover {
+    background-color: #233dff !important;
+    color: white !important;
+}
+
+@media (max-width: 900px) {
+    .name p,
+    .date p {
+        font-size: 11px;
+        margin: 0;
+    }
+
+    .card span {
+        font-size: 10px;
+    }
+
+    .card-title {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero,
+    .contents,
+    .campaign {
+        padding: 50px 30px;
+    }
+}

@@ -1,0 +1,40 @@
+.junior-psikolog-wrapper {
+    width: 100%;
+    height: 365px;
+    border-radius: 9px;
+    background-image: url("../img/junior-psikolog/junior-psikolog-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+.psikolog-img {
+    height: 287px;
+    display: block;
+    margin: auto;
+}
+.content-wrapper {
+    padding-right: 3rem;
+    color: #2d2d2d;
+}
+.content-wrapper h3 {
+    font-size: 32px;
+}
+.content-wrapper p {
+    font-size: 18px;
+}
+.content-wrapper button {
+    border-radius: 100px;
+    background-color: #596fff;
+    padding: 0.5rem 4.8rem;
+    font-size: 14px;
+}
+@media screen and (max-width: 1200px) {
+    .junior-psikolog-wrapper {
+        height: auto;
+        padding: 1rem;
+    }
+    .content-wrapper button {
+        margin: auto;
+        display: block;
+    }
+}

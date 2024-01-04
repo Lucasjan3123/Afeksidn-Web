@@ -1,0 +1,104 @@
+/* HEADER */
+div .container-fluid {
+    background: rgb(96, 121, 253);
+    background: linear-gradient(
+        270deg,
+        rgba(96, 121, 253, 0) 24%,
+        rgba(93, 118, 253, 0.35518520152201505) 32%,
+        rgba(95, 120, 253, 1) 45%
+    );
+    color: white;
+    padding: 5rem;
+    position: relative;
+}
+
+div .container-fluid img {
+    max-width: 40rem;
+    position: absolute;
+    top: 46%;
+    right: 0rem;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+.background {
+    position: absolute;
+}
+.left {
+    top: 22rem;
+    left: 0rem;
+}
+
+.right {
+    top: 14.5rem;
+    right: 0px;
+    z-index: -1;
+}
+/* END HEADER */
+/* CONTENT */
+span {
+    color: #233dff;
+}
+
+/* Tanya Admin Start */
+.btn-tanya {
+    color: #233dff;
+    padding: 10px 30px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.btn-tanya:hover {
+    background-color: #233dff;
+    color: #fff;
+}
+/* Tanya Admin End */
+
+/* RESPONSIVE */
+@media only screen and (max-width: 800px) {
+    /* For tablets: */
+    div .container-fluid {
+        padding: 2rem;
+    }
+    div .container-fluid img {
+        right: -8rem;
+    }
+    .left {
+        top: 15rem;
+        left: 0rem;
+    }
+
+    .right {
+        top: 14.5rem;
+        right: 0px;
+        z-index: -1;
+    }
+}
+@media only screen and (max-width: 500px) {
+    /* For mobile phones: */
+    div .container-fluid {
+        background: rgb(96, 121, 253);
+        background: linear-gradient(
+            280deg,
+            rgba(96, 121, 253, 0) 24%,
+            rgba(93, 118, 253, 0.35518520152201505) 32%,
+            rgba(95, 120, 253, 1) 45%
+        );
+        color: inear-gradient(
+            360deg,
+            rgba(96, 121, 253, 0) 24%,
+            rgba(93, 118, 253, 0.35518520152201505) 32%,
+            rgba(95, 120, 253, 1) 45%
+        );
+        padding: 2rem;
+        position: relative;
+    }
+    div .container-fluid img {
+        right: -20%;
+        width: 100%;
+        top: 73%;
+    }
+}

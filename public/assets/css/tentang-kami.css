@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none !important;
+}
+
+/* HEADER */
+div .container-fluid {
+    background: rgb(96, 121, 253);
+    background: linear-gradient(
+        283deg,
+        rgba(96, 121, 253, 0) 24%,
+        rgba(93, 118, 253, 0.35518520152201505) 32%,
+        rgba(95, 120, 253, 1) 45%
+    );
+    color: white;
+    padding: 5rem;
+    position: relative;
+}
+
+div .container-fluid img {
+    max-width: 40rem;
+    position: absolute;
+    top: 50%;
+    right: 0rem;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+.background {
+    position: absolute;
+}
+.left {
+    top: 22rem;
+    left: 0rem;
+}
+
+.right {
+    top: 20.6rem;
+    right: 0px;
+    z-index: -1;
+}
+
+@media (max-width: 830px) {
+    .hero-wrapper {
+        padding-top: 30px !important;
+    }
+
+    .hero p {
+        font-size: 17px !important;
+    }
+}
+
+@media (max-width: 470px) {
+    .hero p {
+        font-size: 16px !important;
+    }
+}
+/* END HEADER */
+
+/* CONTENT */
+small {
+    width: 6rem;
+}
+
+ul.custom-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.custom-list li {
+    background-image: url("../img/about-us/check.png");
+    background-repeat: no-repeat;
+    background-size: 23px 23px; /* Sesuaikan ukuran gambar */
+    background-position: left center;
+    padding-left: 30px; /* Sesuaikan jarak antara gambar icon dan teks */
+    margin-bottom: 15px; /* Sesuaikan jarak antara setiap item daftar */
+}
+/* END CONTENT */
+
+/* VISI MISI  */
+/* Atur layout flexbox untuk tampilan perangkat dengan lebar kurang dari 768px (ukuran medium) */
+@media (max-width: 767.98px) {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .col-md-6 {
+        width: 100%;
+    }
+}
+
+.background-visimisi {
+    position: absolute;
+}
+
+.right-misi {
+    top: 70.2rem;
+    right: 0px;
+    z-index: 1;
+}
+
+/* END VISI MISI  */
+
+/* PENGURUS & #BEBAS KHAWATIR */
+.background-pengurus {
+    position: absolute;
+    width: 39rem;
+}
+.left-pengurus {
+    top: 90rem;
+    left: -1rem;
+}
+
+#card {
+    height: 100%;
+}
+
+.image-container {
+    width: 100%;
+    height: auto !important;
+    background-image: url("../img/about-us/Pengurus.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .row-cols-1 {
+        flex-direction: column;
+    }
+}
+/* END  PENGURUS & #BEBAS KHAWATIR */
+
+/* WHATSAPP */
+div .button-wa {
+    background-color: #233dff;
+    color: #fff;
+    border: 2px solid transparent;
+    width: 95px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.button-wa:hover {
+    transform: scale(1.1);
+    background: #233dff;
+}
+
+.button-wa:focus {
+    outline: #233dff;
+}
+/* EBD WHATSAPP */
+
+/* FOOTER */
+footer {
+    background-color: #5a74fd;
+    position: relative;
+}
+
+.contact-img {
+    max-width: 20px;
+}
+
+.link-title {
+    font-size: 18px;
+}
+
+footer {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bottom {
+    background-color: #4959db;
+    padding: 15px 10px;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+}
+
+.content {
+    margin-bottom: 55px;
+}
+
+/* END FOOTER */
+
+/* HEADER SMARTPHONE */
+/* Gaya CSS untuk layar smartphone */
+@media (max-width: 767.98px) {
+    div .container-fluid {
+        background: rgb(96, 121, 253);
+        background: linear-gradient(
+            0deg,
+            rgba(96, 121, 253, 0) 16%,
+            rgba(93, 118, 253, 0.35518520152201505) 46%,
+            rgba(95, 120, 253, 1) 91%
+        );
+    }
+
+    div .container-fluid img {
+        top: auto;
+        bottom: 0rem;
+        transform: translateY(0%);
+    }
+
+    .left {
+        top: auto;
+        bottom: 0rem;
+    }
+
+    .right {
+        top: 7.6rem;
+    }
+}
+
+/* FOOTER FOR SMARTPHONE */
+
+/* END FOOTER FOR SMARTPHONE */

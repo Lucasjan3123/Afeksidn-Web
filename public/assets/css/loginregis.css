@@ -1,0 +1,96 @@
+* {
+    font-family: "Rubik", sans-serif;
+}
+body {
+    height: 100vh;
+    background-image: url("../img/lupapassword.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.form-btn {
+    padding: 10px 25px !important;
+    background-color: #233dff !important;
+    color: white !important;
+    border: none !important;
+}
+
+input {
+    box-shadow: none !important;
+    font-size: 14px !important;
+}
+
+a {
+    color: #233dff;
+    text-decoration: none;
+}
+
+.form-btn:focus,
+.form-btn:active {
+    border: none;
+}
+
+.text-muted,
+input,
+input::placeholder {
+    color: #9aa2b1 !important;
+}
+
+input::placeholder {
+    height: 39px;
+}
+
+input::placeholder {
+    font-size: 14px;
+}
+
+.btn-outline {
+    background-color: transparent !important;
+    color: #233dff !important;
+    border: solid 2px #233dff !important;
+}
+
+.btn-transparent {
+    background: transparent !important;
+    color: black !important;
+    border: 1px solid #d4dae6 !important;
+}
+
+.btn-transparent img {
+    width: 24px;
+    height: 24px;
+}
+
+.btn-transparent span {
+    height: 24px;
+}
+
+.forgetPassBtn {
+    color: #233dff;
+}
+
+.formSmText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 90%;
+}
+
+.horizontal-line {
+    flex: 1;
+    border-bottom: 1px solid #9aa2b1;
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}

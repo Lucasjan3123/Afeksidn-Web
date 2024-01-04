@@ -1,0 +1,206 @@
+/* HEADER */
+div .container-fluid {
+    background: rgb(96, 121, 253);
+    background: linear-gradient(
+        270deg,
+        rgba(96, 121, 253, 0) 24%,
+        rgba(93, 118, 253, 0.35518520152201505) 32%,
+        rgba(95, 120, 253, 1) 45%
+    );
+    color: white;
+    padding: 5rem;
+    position: relative;
+}
+
+div .container-fluid img {
+    max-width: 40rem;
+    position: absolute;
+    top: 60%;
+    right: 0rem;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+.background {
+    position: absolute;
+}
+.left {
+    top: 22rem;
+    left: 0rem;
+}
+
+.right {
+    top: 14.5rem;
+    right: 0px;
+    z-index: -1;
+}
+
+@media (min-width:1600px) {
+    div .container-fluid {
+        padding: 5rem 15rem;
+        height: 31.9rem;
+        position: relative;
+    }
+
+    div .container-fluid img {
+        max-width: 65rem;
+        width: 65rem;
+        top: 75%;
+        right: 0rem;
+        transform: translateY(-50%);
+        z-index: -1;
+    }
+}
+/* END HEADER */
+/* CONTENT */
+span {
+    color: #233dff;
+}
+
+/* Tanya Admin Start */
+.btn-tanya {
+    color: #233dff;
+    padding: 10px 30px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.btn-tanya:hover {
+    background-color: #233dff;
+    color: #fff;
+}
+/* Tanya Admin End */
+
+/* RESPONSIVE */
+@media only screen and (max-width: 800px) {
+    /* For tablets: */
+    div .container-fluid {
+        padding: 2rem;
+    }
+    div .container-fluid img {
+        right: -8rem;
+    }
+    .left {
+        top: 15rem;
+        left: 0rem;
+    }
+
+    .right {
+        top: 14.5rem;
+        right: 0px;
+        z-index: -1;
+    }
+}
+@media only screen and (max-width: 500px) {
+    /* For mobile phones: */
+    div .container-fluid {
+        background: rgb(96, 121, 253);
+        background: linear-gradient(
+            280deg,
+            rgba(96, 121, 253, 0) 24%,
+            rgba(93, 118, 253, 0.35518520152201505) 32%,
+            rgba(95, 120, 253, 1) 45%
+        );
+        color: inear-gradient(
+            360deg,
+            rgba(96, 121, 253, 0) 24%,
+            rgba(93, 118, 253, 0.35518520152201505) 32%,
+            rgba(95, 120, 253, 1) 45%
+        );
+        padding: 2rem;
+        position: relative;
+    }
+    div .container-fluid img {
+        right: -40%;
+        width: 150%;
+        top: 73%;
+    }
+}
+
+/* caurosel */
+:root {
+    --swiper-navigation-size: 25px !important;
+}
+
+.contents {
+    padding: 0 100px;
+}
+
+.slide-container {
+    height: fit-content;
+}
+
+.slide-container h2 {
+    color: blue;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.slide-container p {
+    color: rgb(92, 92, 92);
+}
+
+.swiper-slide {
+    margin-top: 50px;
+    background: var(--secondary);
+    overflow: visible;
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 100px;
+    border: 1px solid rgb(214, 213, 213);
+}
+
+.swiper-slide span {
+    font-size: 14px;
+    color: black;
+}
+
+.slide-container .swiper-pagination-bullet {
+    height: 5px;
+    background-color: rgb(251, 223, 13);
+    opacity: 1;
+}
+
+.slide-container .swiper-pagination-bullet-active {
+    width: 25px;
+    height: 5px;
+    border-radius: 5px;
+}
+
+.s-btn {
+    padding: 17px;
+    border-radius: 5px;
+}
+
+.swiper-button-next {
+    position: absolute !important;
+    top: 35px !important;
+    background-color: blue;
+    color: white !important;
+    border: 3px solid blue;
+}
+
+.swiper-button-prev {
+    position: absolute !important;
+    top: 35px !important;
+    left: 91.7% !important;
+    border: 3px solid blue;
+}
+
+@media (max-width: 1000px) {
+    .contents {
+        padding: 0 30px;
+        text-align: center;
+    }
+
+    .swiper-button-next {
+        display: none !important;
+    }
+
+    .swiper-button-prev {
+        display: none !important;
+    }
+}

@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", sans-serif !important;
+    text-decoration: none !important;
+}
+
+/* BREADCRUMB */
+@media (max-width: 767.98px) {
+    .breadcrumb a {
+        display: none;
+    }
+    .breadcrumb li {
+        display: none;
+    }
+}
+
+.breadcrumb .breadcrumb-item a,
+.breadcrumb .breadcrumb-item.active {
+    color: white !important;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: " > ";
+    color: white !important;
+}
+/* END BREADCRUMB */
+
+/* HEADER */
+
+div .hero {
+    background: rgb(96, 121, 253);
+    color: white;
+    padding: 3rem;
+}
+
+div .btn-join {
+    position: relative;
+    z-index: 2;
+    background-color: #ffd34e;
+    box-shadow: 0px 0px 40px 0px #ffd34e;
+}
+
+div .btn-join:hover {
+    background-color: #ffd34e;
+    color: #000;
+    animation: scale-down-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes scale-down-center {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.93);
+    }
+}
+
+.background {
+    position: absolute;
+    z-index: 1;
+}
+.left {
+    top: 22rem;
+    left: 0rem;
+}
+
+.right {
+    top: 6.9rem;
+    right: 0px;
+}
+/* END HEADER */
+
+/* BENEFIT SECTION */
+div .card-benefits {
+    height: 100%;
+}
+/* END BENEFIT SECTION */
+
+/* TUGAS DAN TANGGUNG JAWAB */
+@media (min-width: 1199.98px) {
+    .box {
+        height: 5rem;
+    }
+    .box-1 {
+        height: 4rem;
+    }
+}
+/* END TUGAS DAN TANGGUNG JAWAB */
+
+/* SLIDER CAROUSEL */
+:root {
+    --swiper-navigation-size: 25px !important;
+    --swiper-theme-color: blue !important;
+}
+
+.content {
+    padding: 0 100px;
+}
+
+.slide-container {
+    height: fit-content;
+}
+
+.slide-container h2 {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.swiper-slide {
+    margin-top: 50px;
+    background: var(--secondary);
+    overflow: visible;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 100px;
+    border: 1px solid rgb(214, 213, 213);
+}
+
+.swiper-slide span {
+    font-size: 14px;
+}
+
+.slide-container .swiper-pagination-bullet {
+    height: 5px;
+    background-color: rgb(251, 223, 13);
+    opacity: 1;
+}
+
+.slide-container .swiper-pagination-bullet-active {
+    width: 25px;
+    height: 5px;
+    border-radius: 5px;
+}
+
+.s-btn {
+    padding: 17px;
+    border-radius: 5px;
+}
+
+.swiper-button-next {
+    position: absolute !important;
+    top: 35px !important;
+    background-color: #fff;
+    color: blue !important;
+    border: 3px solid #fff;
+}
+
+.swiper-button-prev {
+    position: absolute !important;
+    top: 35px !important;
+    left: 91% !important;
+    border: 3px solid #fff;
+    color: #fff !important;
+}
+
+@media (max-width: 1050px) {
+    .content {
+        padding: 0 30px;
+        text-align: center;
+    }
+
+    .swiper-button-next {
+        display: none !important;
+    }
+
+    .swiper-button-prev {
+        display: none !important;
+    }
+}
+
+.bg-carousel {
+    position: absolute;
+}
+.bg-up {
+    top: 96rem;
+    left: 64rem;
+}
+
+.bg-bottom {
+    top: 127rem;
+    left: 50.8rem;
+}
+
+.bg-up-left {
+    top: 111rem;
+    right: 50rem;
+}
+
+.bg-bottom-left {
+    top: 130rem;
+    right: 40rem;
+}
+
+@media (max-width: 1199.98px) {
+    .bg-up {
+        top: 96rem;
+        left: 59rem;
+    }
+    .bg-bottom {
+        top: 127rem;
+        left: 45.9rem;
+    }
+    .bg-up-left {
+        top: 111rem;
+        right: 45.5rem;
+    }
+
+    .bg-bottom-left {
+        top: 128rem;
+        right: 35rem;
+    }
+}
+
+/* END SLIDER CAROUSEL */
+
+/* BERGABUNGLAH BERSAMA KAMI */
+.btn-selengkapnya:hover {
+    background-color: transparent !important;
+    border: 1px solid #233dff !important;
+    color: #233dff !important;
+}
+
+@media (max-width: 1199.98px) {
+    .col-join {
+        flex: 100%;
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .col-join {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+/* END BERGAUNG BERSAMA KAMI */

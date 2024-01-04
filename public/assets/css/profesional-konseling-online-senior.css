@@ -1,0 +1,101 @@
+.step-progress-container{
+    margin-bottom: 6rem;
+  }
+   .step-progress {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.step-item {
+  text-align: center;
+  position: relative;
+  width: 100px;
+  height: 30px;
+}
+
+.step-number {
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #ACACAC;
+  color: #fff;
+  font-weight: bold;
+  margin: auto;
+}
+
+.step-label {
+  font-size: 1rem;
+  padding-top: 1rem;
+  margin-top: 5px;
+}
+
+
+.step-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 45%;
+  left: calc(100%-50px);
+  width: 200px;
+  height: 2px;
+  background-color: black;
+}
+.active{
+  background-color: gray;
+}
+
+.psikolog-wrapper{
+  border-radius: 30px;
+  width: 100%;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  gap: 3rem;
+  
+}
+.paket-wrapper{
+  border: 1px solid black;
+  border-radius: 30px;
+  width: 300px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+.paket-button{
+  width: 80%;
+  padding: 5px 25px;
+  border-radius: 50px;
+  background-color: #FBDD41;
+  font-weight: bold;
+}
+
+
+@media screen and (max-width:992px) {
+  .step-item:not(:last-child)::after {
+    width: 50px;
+    left: calc(100%-10px);
+  }
+}
+@media screen and (max-width:576px) {
+  .step-item:not(:last-child)::after {
+    top: 50%;
+    left: calc(100%-0px);
+    width: 25px;
+  }
+  .step-label {
+    line-height: 1px;
+    font-size: .5rem;
+    padding-top: 1rem;
+    margin-top: 5px;
+  }
+}

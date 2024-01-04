@@ -1,0 +1,99 @@
+* {
+    font-family: "Rubik", sans-serif !important;
+    text-decoration: none !important;
+}
+
+/* contents */
+.contents {
+    /* navbar height + padding top */
+    /* padding: calc(50px + 94px) 90px;  */
+    padding: calc(50px + 10px) 90px;
+    max-width: 1375px;
+    margin: auto !important;
+}
+
+/* side */
+.password-container {
+    position: relative;
+}
+
+.password-container input {
+    font-size: 15px;
+    box-shadow: none !important;
+    background: rgb(247, 247, 247);
+}
+
+.button button:hover {
+    background-color: #f1f1f2 !important;
+}
+
+.password-icon {
+    width: 22px;
+}
+
+.form-check,
+select,
+.form-group input {
+    font-size: 15px !important;
+    box-shadow: none !important;
+    color: rgb(103, 102, 102);
+}
+
+.form-check {
+    margin-bottom: 10px;
+}
+
+.side-btn,
+.card-btn {
+    background-color: #233dff !important;
+    color: white !important;
+    margin-bottom: 10px;
+}
+
+.side-btn:hover,
+.card-btn:hover {
+    background-color: transparent !important;
+    border: 1px solid #233dff !important;
+    color: #233dff !important;
+}
+
+.btn-outline {
+    background-color: transparent !important;
+    border: 1px solid #233dff !important;
+    color: #233dff !important;
+}
+
+.btn-outline:hover {
+    background-color: #233dff !important;
+    color: white !important;
+}
+/* side */
+
+/* content */
+.content {
+    padding-left: 20px !important;
+}
+.article-card {
+    box-shadow: 0 0px 8px 5px rgba(94, 94, 94, 0.1);
+    margin: auto;
+}
+.article-card img {
+    height: fit-content;
+}
+.card-btn {
+    background-color: #233dff;
+    color: white;
+    width: fit-content;
+}
+.article-card span {
+    font-size: 17px;
+}
+/* content */
+
+/* contents end */
+
+@media (max-width: 600px) {
+    .contents {
+        padding: 150px 30px;
+    }
+}

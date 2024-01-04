@@ -1,0 +1,298 @@
+:root {
+    --bg-afeksi-theme: #5a74fd;
+    --color-afeksi-custom: #374dfa;
+    --bg-final-footer: #4959db;
+}
+
+.color-custom {
+    color: var(--color-afeksi-custom);
+}
+
+/* FOR DESKTOP ========================================================================================== */
+@media only screen and (min-width: 991px) {
+    /* HERO */
+    .hero {
+        background-color: var(--bg-afeksi-theme);
+        color: white;
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* ============ HERO LAYERS ================= */
+    .hero::after {
+        content: "";
+        position: absolute;
+        width: 200%;
+        height: 400%;
+        top: -120%;
+        left: 70%;
+        background: url(../img/kebijakan-privasi/layer.png) repeat-y;
+        background-size: 30%;
+        transform: rotate(15deg);
+        opacity: 0.1;
+    }
+    .hero::before {
+        content: "";
+        position: absolute;
+        width: 200%;
+        height: 300%;
+        top: -120%;
+        left: -20%;
+        background: url(../img/kebijakan-privasi/layer.png) repeat-y;
+        background-size: 25%;
+        transform: rotate(-15deg);
+        opacity: 0.1;
+    }
+
+    /* PRIVACY SECTION */
+    .container .nav .nav-item .nav-link {
+        color: black;
+    }
+
+    .accordion .accordion-item-custom {
+        margin: 2% 0;
+        border: 2px solid lightgrey;
+    }
+
+    .accordion .accordion-item-custom:hover {
+        border: 2px solid var(--bg-afeksi-theme);
+    }
+
+    .accordion .accordion-item-custom .accordion-body {
+        margin-top: -20px;
+        padding-bottom: 2%;
+        font-size: 20px;
+        width: 93%;
+        margin-left: 30px;
+    }
+
+    .accordion-button-custom {
+        border: 0;
+        background-color: transparent;
+        padding: 2% 1.7%;
+        width: 100%;
+        text-align: start;
+        position: relative;
+        display: flex;
+        margin-left: 30px;
+    }
+
+    .accordion-button-custom:hover {
+        color: var(--bg-afeksi-theme);
+    }
+
+    .accordion-button-custom h2 {
+        font-weight: bold;
+        font-size: 26.787px;
+        width: 80%;
+    }
+
+    .arrow[aria-expanded="true"]::after {
+        font-family: "Bootstrap-icons";
+        content: "\F2EA";
+        position: absolute;
+        right: 80px;
+        font-weight: bold;
+    }
+
+    .arrow[aria-expanded="false"]::after {
+        font-family: "Bootstrap-icons";
+        content: "\F64D";
+        position: absolute;
+        right: 80px;
+        font-weight: bold;
+    }
+    /* ============================================================ */
+}
+
+/* END DESKTOP ==========================================================================================*/
+
+/* FOR TABLETS ==========================================================================================*/
+@media only screen and (min-width: 768px) and (max-width: 990px) {
+    /* HERO */
+    .hero {
+        background-color: var(--bg-afeksi-theme);
+        color: white;
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* ============ HERO LAYERS ================= */
+    .hero::after {
+        content: "";
+        position: absolute;
+        width: 200%;
+        height: 400%;
+        top: -120%;
+        left: 70%;
+        background: url(../img/kebijakan-privasi/layer.png) repeat-y;
+        background-size: 30%;
+        transform: rotate(15deg);
+        opacity: 0.1;
+    }
+    .hero::before {
+        content: "";
+        position: absolute;
+        width: 200%;
+        height: 300%;
+        top: -120%;
+        left: -20%;
+        background: url(../img/kebijakan-privasi/layer.png) repeat-y;
+        background-size: 25%;
+        transform: rotate(-15deg);
+        opacity: 0.1;
+    }
+
+    /* PRIVACY SECTION */
+    .accordion .accordion-item-custom {
+        margin: 2% 0;
+        border: 2px solid lightgrey;
+    }
+
+    .accordion .accordion-item-custom:hover {
+        border: 2px solid var(--bg-afeksi-theme);
+    }
+
+    .accordion .accordion-item-custom .accordion-body {
+        margin-top: -20px;
+        padding-bottom: 2%;
+        font-size: 16px;
+        width: 93%;
+        margin-left: 30px;
+    }
+
+    .accordion-button-custom {
+        border: 0;
+        background-color: transparent;
+        padding: 2% 1.7%;
+        width: 100%;
+        text-align: start;
+        position: relative;
+        display: flex;
+        margin-left: 30px;
+    }
+
+    .accordion-button-custom:hover {
+        color: var(--bg-afeksi-theme);
+    }
+
+    .accordion-button-custom h2 {
+        font-weight: bold;
+        font-size: 20px;
+        width: 80%;
+    }
+
+    .arrow[aria-expanded="true"]::after {
+        font-family: "Bootstrap-icons";
+        content: "\F2EA";
+        position: absolute;
+        right: 80px;
+        font-weight: bold;
+    }
+
+    .arrow[aria-expanded="false"]::after {
+        font-family: "Bootstrap-icons";
+        content: "\F64D";
+        position: absolute;
+        right: 80px;
+        font-weight: bold;
+    }
+}
+/* END TABLETS ==========================================================================================*/
+
+/* FOR MOBILE ==========================================================================================*/
+@media only screen and (max-width: 767px) {
+    /* HERO */
+    .hero {
+        background-color: var(--bg-afeksi-theme);
+        color: white;
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* ============ HERO LAYERS ================= */
+    .hero::after {
+        content: "";
+        position: absolute;
+        width: 200%;
+        height: 400%;
+        top: -110%;
+        left: 60%;
+        background: url(../img/kebijakan-privasi/layer.png) repeat-y;
+        background-size: 70%;
+        transform: rotate(30deg);
+        opacity: 0.1;
+    }
+    .hero::before {
+        content: "";
+        position: absolute;
+        width: 200%;
+        height: 300%;
+        top: -150%;
+        left: -80%;
+        background: url(../img/kebijakan-privasi/layer.png) repeat-y;
+        background-size: 70%;
+        transform: rotate(20deg);
+        opacity: 0.1;
+    }
+
+    /* PRIVACY SECTION */
+
+    .accordion .accordion-item-custom {
+        margin: 3% 0;
+        border: 2px solid lightgrey;
+        overflow: hidden;
+    }
+
+    .accordion .accordion-item-custom:hover {
+        border: 2px solid var(--bg-afeksi-theme);
+    }
+
+    .accordion .accordion-item-custom .accordion-body {
+        margin-top: -20px;
+        padding-bottom: 2%;
+        font-size: 14px;
+        /* width: 97%; */
+        margin-left: 5px;
+    }
+
+    .accordion-button-custom {
+        border: 0;
+        background-color: transparent;
+        padding: 2% 0;
+        width: 100%;
+        text-align: start;
+        position: relative;
+        display: flex;
+        margin-left: 25px;
+    }
+
+    .accordion-button-custom:hover {
+        color: var(--bg-afeksi-theme);
+    }
+
+    .accordion-button-custom h2 {
+        font-size: 17px;
+        font-weight: bold;
+        width: 70%;
+    }
+
+    .arrow[aria-expanded="true"]::after {
+        font-family: "Bootstrap-icons";
+        content: "\F2EA";
+        position: absolute;
+        right: 50px;
+        font-weight: bold;
+    }
+
+    .arrow[aria-expanded="false"]::after {
+        font-family: "Bootstrap-icons";
+        content: "\F64D";
+        position: absolute;
+        right: 50px;
+        font-weight: bold;
+    }
+
+    /* ============================================================ */
+}
+/* END MOBILE ==========================================================================================*/

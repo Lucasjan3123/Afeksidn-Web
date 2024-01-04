@@ -1,0 +1,19 @@
+.pop-up {
+    width: 70%;
+    margin: 50px auto 100px auto;
+    text-align: center;
+    max-width: 850px;
+}
+
+.btn-kembali {
+    padding: 15px 25px;
+    background-color: #233dff;
+    color: white;
+    border-radius: 12px;
+    transition: 0.5s;
+}
+
+.btn-kembali:hover {
+    background-color: #1c30cc;
+    color: white;
+}
