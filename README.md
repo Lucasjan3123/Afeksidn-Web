@@ -1,8 +1,7 @@
 # Afeksidn-Web
 This is an e-commerce website created while interning for Afeksidn company.
 
-## Daftar Isi
-
+## List
 - [Description](#Description)
 - [Technology](#Technology)
 - [How to Run This Project](#How-to-Run-This-Project)
